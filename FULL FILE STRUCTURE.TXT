@@ -1,0 +1,25 @@
+fairinsure/
+├── README.md
+├── VISION.md
+├── LICENSE.md
+├── fairinsure.py
+├── config.example.json
+├── requirements.txt
+├── .gitignore
+├── docs/
+│   ├── ARCHITECTURE.md
+│   ├── ROADMAP.md
+│   ├── CONTRIBUTING.md
+│   └── INCORPORATION.md
+├── agents/
+│   ├── adam_ceo.py
+│   └── ceo.py
+├── finance/
+│   ├── wallet.py
+│   └── investment_engine.py
+├── human/
+│   └── JOB_001_EMPATHY.md
+└── web/
+    ├── index.html
+    ├── style.css
+    └── logo.svg
