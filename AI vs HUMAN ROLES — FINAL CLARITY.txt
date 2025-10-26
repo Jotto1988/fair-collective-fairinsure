@@ -1,0 +1,7 @@
+Function,AI (Autonomous),Human (Intervention)
+VAT Calculation,100%,Sign-off on large returns
+VAT Payment,Auto via bank,None
+Tax Optimization,Drafts full strategy,Approves donations
+Donations,Selects Musk-aligned schools,Final vetting
+Investments,Executes ESG trades,Oversight board
+Education Builds,Designs campuses,On-ground execution
