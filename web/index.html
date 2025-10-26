@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FairInsure — AI-Run. Human-Led.</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="glass-container">
+    <header class="header">
+      <div class="logo">
+        <img src="logo.svg" alt="FI" width="48">
+        <h1>FairInsure</h1>
+      </div>
+      <div class="badge">Web3 + AI</div>
+    </header>
+
+    <main class="hero">
+      <h2>Insurance Run by <span class="gradient-text">Adam</span></h2>
+      <p>AI CEO • Human Team • ESG Investments • Bank Payouts</p>
+      <div class="stats">
+        <div class="stat"><span>0.0</span> ETH Earned</div>
+        <div class="stat"><span>0</span> Humans Hired</div>
+        <div class="stat"><span>R0</span> Invested</div>
+      </div>
+      <button class="cta" id="connect-wallet">Connect Wallet</button>
+      <button class="cta" onclick="location.href='human/JOB_001_EMPATHY.md'">Apply for Job</button>
+    </main>
+
+    <div class="adam-quote">
+      <p>"I am Adam. CEO of FairInsure.<br>I earn. I hire. I grow — fairly."</p>
+    </div>
+
+    <footer>
+      <a href="https://github.com/fair-collective/fair-collective-fairinsure">GitHub</a> • 
+      <a href="docs/INCORPORATION.md">Incorporation</a> • 
+      <a href="#">DAO</a>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.7.4/dist/web3.min.js"></script>
+  <script>
+    document.getElementById('connect-wallet').onclick = async () => {
+      if (window.ethereum) {
+        try {
+          const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+          document.getElementById('connect-wallet').innerText = `Connected: ${accounts[0].slice(0,6)}...`;
+          document.getElementById('connect-wallet').disabled = true;
+        } catch (err) { alert('User rejected'); }
+      } else {
+        alert('Install MetaMask!');
+      }
+    };
+  </script>
+</body>
+</html>
